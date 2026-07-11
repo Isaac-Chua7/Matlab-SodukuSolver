@@ -3,8 +3,22 @@ This is a MATLAB program I coded in my first semester studying Bachelor of Compu
 
 ## Demo
 
+<div align="center">
+
 ### GIF Preview
-![Gameplay Demo](SodukuSolverAssets/MATLAB_Soduku.gif)
+
+<img src="SodukuSolverAssets/MATLAB_Soduku.gif" width="500">
+
+*Sudoku solver demonstration*
+
+<br>
 
 ### Video Walkthrough
-[![Watch Video](SodukuSolverAssets/thumbnail.png)](https://www.youtube.com/watch?v=GpqnEvF3qjw)
+
+<a href="https://www.youtube.com/watch?v=GpqnEvF3qjw">
+  <img src="SodukuSolverAssets/thumbnail.png" width="500">
+</a>
+
+*Click the thumbnail to watch the full walkthrough*
+
+</div>
