@@ -1,0 +1,103 @@
+Test case file for s1d which takes in user input and stores in 4 2x2 2d 
+matrices called grids1, grids2, ..., grids4 which are stored in a 2x2 cell
+called grids. These grids are then combined into a 4x4 matrix called 
+wholeGrid. This program then solves the sudoku puzzle and displays the 
+final version of wholeGrid.
+
+User inputs are separated by a space, the program asks for 16 number 
+inputs, which it sorts into grids
+
+
+Test Case 1 (simplified 4x4 sudoku for quicker input)
+User Input          What should be stored
+0 3 0 0             grids{1} = [0 3; 0 0];
+0 2 4 3             grids{2} = [0 2; 4 3];
+2 0 3 4             grids{3} = [2 0; 3 4];
+3 0 0 0             grids{4} = [3 0; 0 0]; 
+
+How it is combined
+wholeGrid = [
+    0 3 0 2;
+    0 0 4 3;
+    2 0 3 0;
+    3 4 0 0
+];
+
+Expected Solved Sudoku
+wholeGrid = [
+    4 3 1 2;
+    1 2 4 3;
+    2 1 3 4;
+    3 4 2 1
+];
+
+Actual Result
+wholeGrid = [
+    4 3 1 2;
+    1 2 4 3;
+    2 1 3 4;
+    3 4 2 1
+];
+
+Test Case 2
+User Input          What should be stored
+0 0 0 1             grids{1} = [0 0; 0 1];
+1 3 2 0             grids{2} = [1 3; 2 0];
+4 0 1 3             grids{3} = [4 0; 1 3];
+0 1 0 0             grids{4} = [0 1; 0 0]; 
+
+How it is combined 
+wholeGrid = [
+    0 0 1 3;
+    0 1 2 0;
+    4 0 0 1;
+    1 3 0 0
+];
+
+Expected Solved Sudoku
+wholeGrid = [
+    2 4 1 3;
+    3 1 2 4;
+    4 2 3 1;
+    1 3 4 2
+];
+
+Actual Result
+wholeGrid = [
+    2 4 1 3;
+    3 1 2 4;
+    4 2 3 1;
+    1 3 4 2
+];
+
+
+Test Case 3
+User Input          What should be stored
+4 0 0 2             grids{1} = [4 0; 0 2];
+0 2 4 0             grids{2} = [0 2; 4 0];
+0 0 1 3             grids{3} = [0 0; 1 3];
+1 3 0 0             grids{4} = [1 3; 0 0]; 
+
+How it is combined
+wholeGrid = [
+    4 0 0 2;
+    0 2 4 0;
+    0 0 1 3;
+    1 3 0 0
+];
+
+Expected Solved Sudoku
+wholeGrid = [
+    4 1 3 2;
+    3 2 4 1;
+    2 4 1 3;
+    1 3 2 4
+];
+
+Actual Result
+wholeGrid = [
+    4 1 3 2;
+    3 2 4 1;
+    2 4 1 3;
+    1 3 2 4
+];
