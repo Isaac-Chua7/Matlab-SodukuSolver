@@ -5,7 +5,7 @@ This is a MATLAB program I coded in my first semester studying Bachelor of Compu
 
 <div align="center">
 
-### GIF Preview
+### Preview
 
 <img src="SodukuSolverAssets/MATLAB_Soduku.gif" width="500">
 
