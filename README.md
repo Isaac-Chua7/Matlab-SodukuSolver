@@ -44,6 +44,7 @@ By combining deterministic logic with backtracking, the solver efficiently solve
 ## 🛠️ Built With
 
 * MATLAB
+* Logical Deduction Algorithm
 * Recursive Backtracking Algorithm
 
 ## 🚀 Getting Started
