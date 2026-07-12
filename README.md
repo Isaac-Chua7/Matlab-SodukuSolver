@@ -16,7 +16,7 @@ A MATLAB application developed during my first semester of the **Bachelor of Com
 
 ### 📺 Solver Preview
 
-<img src="SudokuSolverAssets/MATLAB_Sudoku.gif" alt="MATLAB Sudoku Solver Demo" width="500">
+<img src="SodukuSolverAssets/MATLAB_Soduku.gif" width="500">
 
 *Watch the solver complete a Sudoku puzzle.*
 
@@ -25,7 +25,7 @@ A MATLAB application developed during my first semester of the **Bachelor of Com
 ### ▶️ Video Walkthrough
 
 <a href="https://www.youtube.com/watch?v=GpqnEvF3qjw">
-  <img src="SudokuSolverAssets/thumbnail.png" alt="MATLAB Sudoku Solver Walkthrough" width="500">
+  <img src="SodukuSolverAssets/thumbnail.png" width="500">
 </a>
 
 **⬆️ Click the preview above to watch the full walkthrough on YouTube.**
@@ -34,7 +34,12 @@ A MATLAB application developed during my first semester of the **Bachelor of Com
 
 ## 🧠 How It Works
 
-The solver uses a **recursive backtracking algorithm** to fill each empty cell with a valid number. If a choice results in an invalid board state, the algorithm backtracks and tries the next possible value. This process continues until a complete and valid Sudoku solution is found.
+The solver first applies **logical deduction** to simplify the puzzle. It scans each empty cell and checks whether only one valid number can be placed there based on the existing values in the same **row**, **column**, and **3×3 subgrid**. Any cells with a single possible value are filled in immediately.
+
+If logical deduction alone cannot complete the puzzle, the solver switches to a **recursive backtracking algorithm**. It systematically tests possible values, backtracking whenever a choice leads to an invalid board state, until a complete and valid solution is found.
+
+By combining deterministic logic with backtracking, the solver efficiently solves puzzles while reducing the amount of brute-force searching required.
+
 
 ## 🛠️ Built With
 
