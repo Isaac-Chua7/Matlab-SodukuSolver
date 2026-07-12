@@ -50,6 +50,6 @@ By combining deterministic logic with backtracking, the solver efficiently solve
 ## 🚀 Getting Started
 
 1. Open the project in MATLAB.
-2. Run the main script.
+2. Run the main script (Ensure the SFX file is located in the same folder).
 3. Enter or load a valid Sudoku puzzle.
 4. Watch the solver find the solution step by step.
